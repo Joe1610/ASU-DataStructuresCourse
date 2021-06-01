@@ -28,6 +28,7 @@ int main()
     }
     */
 
+    /*
     // Lec 2
     cout << "Enter no of cards: ";
     int num;
@@ -50,5 +51,21 @@ int main()
         }
     }
     stack.getSum();
+    */
+
+    // Lab 2
+    Stack stack;
+    cout << "Enter a decimal number: ";
+    int num;
+    cin >> num;
+    while (num) {
+        stack.push(num % 2);
+        num /= 2;
+    }
+    cout << "The binary representaion: ";
+    while (!stack.isEmpty()) {
+        cout<<stack.pop();
+    }
+    cout << endl;
 
 }

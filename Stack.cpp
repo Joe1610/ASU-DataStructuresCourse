@@ -53,6 +53,10 @@ void Stack::expand() {
 	arr = newArray;
 }
 
+bool Stack::isEmpty() {
+	return elements < 1;
+}
+
 Stack::~Stack() {
 	cout<<"Object deleted" << endl;
 }

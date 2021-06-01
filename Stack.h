@@ -11,6 +11,7 @@ public:
 	int pop();
 	void getSum();
 	void expand();
+	bool isEmpty();
 	~Stack();
 };
 
