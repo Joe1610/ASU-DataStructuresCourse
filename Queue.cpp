@@ -37,11 +37,6 @@ void Queue<T>::Dequeue() {
 	elements--;
 }
 
-template <class T>
-T Queue<T>::Front() {
-	assert(!IsEmpty());
-	return arr[front];
-}
 
 template <class T>
 bool Queue<T>::IsFull() {
@@ -50,7 +45,13 @@ bool Queue<T>::IsFull() {
 
 template <class T>
 bool Queue<T>::IsEmpty() {
-	return !elements;
+	return elements == 0;
+}
+
+template <class T>
+T Queue<T>::Front() {
+	assert(!IsEmpty());
+	return arr[front];
 }
 
 template <class T>

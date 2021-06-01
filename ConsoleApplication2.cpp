@@ -7,6 +7,10 @@
 #include "Queue.cpp"
 using namespace std;
 
+struct Task {
+    string taskName="";
+    int taskID = 0;
+};
 int main()
 {
     /*
@@ -71,6 +75,7 @@ int main()
     cout << endl;
     */
 
+    /*
     // Lec 3
     int num;
     while (cin >> num) {
@@ -90,5 +95,44 @@ int main()
         cout << endl;
         cout << "Remaining card: " << queue.Front() << endl;
     }
+    */
+
+    // Lab 3
+    Queue<Task> queue(10);
+    while (1) {
+        cout << "******* Welcome to task organizer *******" << endl;
+        cout << "To Add new task press 1\n";
+        cout << "To Remove a task press 2\n";
+        cout << "To Exit press 3\n";
+        Task task;
+        int num;
+        cin >> num;
+        switch (num) {
+        case 1: {
+            cout << "Enter Task ID\n";
+            cin >> task.taskID;
+            cout << "Enter Task Name\n";
+            cin >> task.taskName;
+            queue.Enqueue(task);
+            break;
+        }
+        case 2: {
+            cout << "Task ID: ";
+            cout << queue.Front().taskID << endl;
+            cout << "Task Name: ";
+            cout<<queue.Front().taskName<<endl;
+            queue.Dequeue();
+            break;
+        }
+        case 3: {
+            return 0;
+        }
+        default: {
+            break;
+        }
+        }
+    }
+
+
 
 }
