@@ -7,6 +7,8 @@
 #include "Queue.cpp"
 #include "ArrayList.cpp"
 #include "Course.cpp"
+#include "BinarySearchTree.cpp"
+#include "TreeNode.cpp"
 using namespace std;
 
 struct Task {
@@ -139,6 +141,7 @@ int main()
     }
     */
 
+    /*
     // Lab 4
     ArrayList<Course> arr;
     bool valid = 1;
@@ -170,6 +173,27 @@ int main()
             break;
         }
 
+    }
+    */
+    
+    // Lab 7
+    BinarySearchTree<int> BST;
+    BST.insert(10);
+    BST.insert(5);
+    BST.insert(15);
+    BST.insert(25);
+    cout << BST.getLevel(100) << endl;
+    if (BST.find(7)) {
+        cout << "Found 7\n";
+    }
+    else {
+        cout << "Not Found\n";
+    }
+    if (BST.find(10)) {
+        cout << "Found 10\n";
+    }
+    else {
+        cout << "Not Found\n";
     }
     return 0;
 }
