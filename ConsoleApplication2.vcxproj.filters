@@ -37,6 +37,12 @@
     <Filter Include="Source Files\Queue">
       <UniqueIdentifier>{cb6ccfec-a51f-4a42-a464-cdc65efe423a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ArrayList">
+      <UniqueIdentifier>{6d71e573-509a-41be-a3ee-007e60d63586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ArrayList">
+      <UniqueIdentifier>{3cdc4a53-3871-4f01-b261-16f87d7e9bf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication2.cpp">
@@ -54,6 +60,12 @@
     <ClCompile Include="Queue.cpp">
       <Filter>Source Files\Queue</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayList.cpp">
+      <Filter>Source Files\ArrayList</Filter>
+    </ClCompile>
+    <ClCompile Include="Course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -62,11 +74,14 @@
     <ClInclude Include="LinkedList.h">
       <Filter>Header Files\LinkedList</Filter>
     </ClInclude>
-    <ClInclude Include="Stack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Queue.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayList.h">
+      <Filter>Header Files\ArrayList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

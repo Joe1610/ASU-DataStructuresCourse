@@ -5,6 +5,8 @@
 #include "Student.h"
 #include "Stack.h"
 #include "Queue.cpp"
+#include "ArrayList.cpp"
+#include "Course.cpp"
 using namespace std;
 
 struct Task {
@@ -97,9 +99,11 @@ int main()
     }
     */
 
+    /*
     // Lab 3
     Queue<Task> queue(10);
-    while (1) {
+    bool valid = 1;
+    while (valid) {
         cout << "******* Welcome to task organizer *******" << endl;
         cout << "To Add new task press 1\n";
         cout << "To Remove a task press 2\n";
@@ -125,14 +129,47 @@ int main()
             break;
         }
         case 3: {
-            return 0;
+            valid = 0 ;
+            break;
         }
         default: {
             break;
         }
         }
     }
+    */
 
+    // Lab 4
+    ArrayList<Course> arr;
+    bool valid = 1;
+    while (valid) {
+        cout << "Press 1 to Add Course\nPress 2 to Display Total Students\nPress 3 to Exit\n";
+        int num;
+        cin >> num;
+        switch (num)
+        {
+        case 1: {
+            Course course;
+            course.readData();
+            arr.Append(course);
+            break;
+        }
+        case 2: {
+            int total = 0;
+            for (int i = 0; i < arr.length(); i++) {
+                total += arr.at(i).getNoOFStudents();
+            }
+            cout << "Total = " << total << endl;
+            break;
+        }
+        case 3: {
+            valid = 0;
+            break;
+        }
+        default:
+            break;
+        }
 
-
+    }
+    return 0;
 }
