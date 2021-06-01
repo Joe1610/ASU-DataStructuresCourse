@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Stack">
       <UniqueIdentifier>{76079d7e-d4fb-4f77-883e-4a5a2107dedc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Queue">
+      <UniqueIdentifier>{945f5b7e-f742-43a4-88f9-22ea8fd1b9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Queue">
+      <UniqueIdentifier>{cb6ccfec-a51f-4a42-a464-cdc65efe423a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication2.cpp">
@@ -45,6 +51,9 @@
     <ClCompile Include="Stack.cpp">
       <Filter>Source Files\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Source Files\Queue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -54,6 +63,9 @@
       <Filter>Header Files\LinkedList</Filter>
     </ClInclude>
     <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

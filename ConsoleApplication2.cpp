@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Student.h"
 #include "Stack.h"
+#include "Queue.cpp"
 using namespace std;
 
 int main()
@@ -53,6 +54,7 @@ int main()
     stack.getSum();
     */
 
+    /*
     // Lab 2
     Stack stack;
     cout << "Enter a decimal number: ";
@@ -67,5 +69,26 @@ int main()
         cout<<stack.pop();
     }
     cout << endl;
+    */
+
+    // Lec 3
+    int num;
+    while (cin >> num) {
+        if (!num) break;
+        Queue<int> queue(num);
+        for (int i = 1; i <= num; i++) {
+            queue.Enqueue(i);
+        }
+        cout << "Discarded cards: ";
+        while (queue.size() > 1) {
+            cout << queue.Front() << ' ';
+            queue.Dequeue();
+            int tmp = queue.Front();
+            queue.Dequeue();
+            queue.Enqueue(tmp);
+        }
+        cout << endl;
+        cout << "Remaining card: " << queue.Front() << endl;
+    }
 
 }
