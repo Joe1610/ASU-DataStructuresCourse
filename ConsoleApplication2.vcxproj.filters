@@ -25,6 +25,12 @@
     <Filter Include="Source Files\LinkedList">
       <UniqueIdentifier>{69579ae4-f75c-4020-bf8e-8f1d7282caa8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Stack">
+      <UniqueIdentifier>{f7ee1ee2-e830-4cc4-b877-9a2baabc2a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stack">
+      <UniqueIdentifier>{76079d7e-d4fb-4f77-883e-4a5a2107dedc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication2.cpp">
@@ -36,6 +42,9 @@
     <ClCompile Include="LinkedList.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Source Files\Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h">
@@ -43,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="LinkedList.h">
       <Filter>Header Files\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include "Student.h"
+#include "Stack.h"
 using namespace std;
 
 int main()
 {
+    /*
     // Lab 1
     cout << "Enter no of students: ";
     int num;
@@ -24,4 +26,29 @@ int main()
         cout << "Student " << i + 1 << endl;
         studs[i].displayData();
     }
+    */
+
+    // Lec 2
+    cout << "Enter no of cards: ";
+    int num;
+    cin >> num;
+    Stack stack(num);
+    char type;
+    for (int i = 0; i < num; i++) {
+        cin >> type;
+        if (type == 'W') {
+            stack.push(5);
+        }
+        else if (type == 'D') {
+            stack.push(10);
+        }
+        else if (type == 'C') {
+            stack.pop();
+        }
+        else if (type == 'S') {
+            stack.pushSumOfLastTwo();
+        }
+    }
+    stack.getSum();
+
 }
